@@ -1,4 +1,4 @@
-package com.longgq.leetcode.missingNumber;
+package leetcode.missingNumber;
 
 import java.util.Arrays;
 
