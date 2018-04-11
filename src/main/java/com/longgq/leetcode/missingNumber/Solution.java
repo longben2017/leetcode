@@ -27,6 +27,9 @@ public class Solution {
 		int[] nums = new int[]{3,0,1};
 		int missingNumber = missingNumber(nums);
 		System.out.println(missingNumber);
+		
+		int missingNumber2 = missingNumber2(nums);
+		System.out.println(missingNumber2);
 	}
 	
 	
@@ -41,5 +44,14 @@ public class Solution {
 	    }
 	    
 	    return nums.length;
+	}
+	
+	//思路：对给定数组和不缺失情况下的数组进行异或连接操作，最终能得到缺失的数字
+	public static int missingNumber2(int[] nums){
+		int missingNumber = nums.length;
+		for(int i = 0;i < nums.length;i++){
+			missingNumber ^= nums[i] ^ i; 
+		}
+		return missingNumber;
 	}
 }
