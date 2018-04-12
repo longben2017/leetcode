@@ -1,5 +1,6 @@
 package leetcode.powerOfThree;
 /*
+ * 3的次方
 Given an integer, write a function to determine if it is a power of three.
 
 Follow up:
